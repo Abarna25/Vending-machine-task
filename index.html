@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine Stimulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <image src="logo.webp" width="80px"></image>
+        <h1>FoodCart</h1>
+        <nav>
+           <a href="#container">Home</a>
+           <a href="#menu">Products</a>
+           <a href="#payment">Payments</a>
+           <a href="#Signup">Sign Up</a>
+       </nav>
+   </div>
+</div>
+   <div id="container">
+    <image src="bg.jpg" width="70%" ></image>
+    <div class="content">
+        <h1>Get Started with FoodCart Today!</h1>
+        <p>We serve healthy food with delicious menu choices. The quality of the food is the main point in each of our dishes. The taste that we provide is a unique taste and always attracts the tongue of visitors.</p><br>
+        <input placeholder="Search your food" class="Searchbar"><br>
+        <h2>Hungry? You're in the right place!</h2><br>
+        <button class="visit">Explore Now</button>
+    </div>
+   </div>
+   <div class="Categories">
+    <h1>Categories</h1>
+        <button class="type">Burger</button>
+        <button class="type">Pizza</button>
+        <button class="type">Chicken</button>
+        <button class="type">Cakes</button>
+        <button class="type">Drinks</button>
+        <button class="type">Ice-Cream</button>
+        <button class="type">Fish</button>
+        <button class="type">Pasta</button>
+   </div>
+   <div id="menu">
+    <h1>Our Popular Menu</h1>
+    <div class="products1">
+    <div class="p1">
+        <image src="img1.webp" width="100%" height="60%"></image>
+        <div class="item">
+            <h2 class="food">Burger</h2>
+            <h2 class="price">30$</h2>
+        </div>
+        <div class="Availability">
+        <h3>Stock Quantity:</h3>
+        <input type="number" class="stock" id="burgerstock" value="10" min="0" readonly>
+        </div>
+        <div class="Quantity">
+            <button class="remove" onclick="handleDecrease('burger', 'burgerstock')">-</button>
+            <input type="number" id="burger" value="1" min="1" readonly>
+            <button class="add" onclick="handleIncrease('burger', 'burgerstock')">+</button>
+        </div>
+        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+    </div>
+    <div class="p2">
+        <image src="img2.avif" width="100%" height="120%"></image>
+        <div class="item">
+            <h2 class="food">Pizza</h2>
+            <h2 class="price1">50$</h2>
+        </div>
+        <div class="Availability">
+            <h3>Stock Quantity:</h3>
+            <input type="number" class="stock" id="pizzastock" value="10" min="0" readonly>
+        </div>
+        <div class="Quantity">
+            <button class="remove1" onclick="handleDecrease('pizza', 'pizzastock')">-</button>
+            <input type="number" id="pizza" value="1" min="1" readonly>
+            <button class="add1" onclick="handleIncrease('pizza', 'pizzastock')">+</button>
+        </div>
+        <button class="buy1" id="buy" onclick="buybutton('buy')">Buy Now</button>
+    </div>
+    <div class="p3">
+        <image src="img4.webp" width="100%" height="60%"></image>
+        <div class="item">
+            <h2 class="food">Pancake</h2>
+            <h2 class="price">45$</h2>
+        </div>
+        <div class="Availability">
+            <h3>Stock Quantity:</h3>
+            <input type="number" class="stock" id="pancakestock" value="10" min="0" readonly>
+        </div>
+        <div class="Quantity">
+            <button class="remove" onclick="handleDecrease('pancake', 'pancakestock')">-</button>
+            <input type="number" id="pancake" value="1" min="1" readonly>
+            <button class="add" onclick="handleIncrease('pancake', 'pancakestock')">+</button>
+        </div>
+        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+    </div>
+    <div class="p4">
+        <image src="img6.webp" width="100%"></image>
+        <div class="item">
+            <h2 class="food">Ice-Cream</h2>
+            <h2 class="price2">30$</h2>
+        </div>
+        <div class="Availability">
+            <h3>Stock Quantity:</h3>
+            <input type="number" class="stock" id="icestock" value="10" min="0" readonly>
+        </div>
+        <div class="Quantity">
+            <button class="remove" onclick="handleDecrease('ice', 'icestock')">-</button>
+            <input type="number" id="ice" value="1" min="1" readonly>
+            <button class="add" onclick="handleIncrease('ice', 'icestock')">+</button>
+        </div>
+        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+    </div>
+    </div>
+    <div class="products2">
+        <div class="p5">
+            <image src="img7.webp" width="100%"></image>
+            <div class="item">
+                <h2 class="food">Hot-Chocolate</h2>
+                <h2 class="price3">30$</h2>
+            </div>
+            <div class="Availability">
+                <h3>Stock Quantity:</h3>
+                <input type="number" class="stock" id="chocostock" value="10" min="0" readonly>
+            </div>
+            <div class="Quantity">
+                <button class="remove" onclick="handleDecrease('choco', 'chocostock')">-</button>
+                <input type="number" id="choco" value="1" min="1" readonly>
+                <button class="add" onclick="handleIncrease('choco', 'chocostock')">+</button>
+            </div>
+            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        </div>
+        <div class="p6">
+            <image src="img3.webp" width="100%" height="80%"></image>
+            <div class="item">
+                <h2 class="food">Milkshake</h2>
+                <h2 class="price4">30$</h2>
+            </div>
+            <div class="Availability">
+                <h3>Stock Quantity:</h3>
+                <input type="number" class="stock" id="milkshakestock" value="10" min="0" readonly>
+            </div>
+            <div class="Quantity">
+                <button class="remove2" onclick="handleDecrease('milkshake', 'milkshakestock')">-</button>
+                <input type="number" id="milkshake" value="1" min="1" readonly>
+                <button class="add2" onclick="handleIncrease('milkshake', 'milkshakestock')">+</button>
+            </div>
+            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        </div>
+        <div class="p7">
+            <image src="img5.webp" width="100%"></image>
+            <div class="item">
+                <h2 class="food">Fried-Chicken</h2>
+                <h2 class="price5">50$</h2>
+            </div>
+            <div class="Availability">
+                <h3>Stock Quantity:</h3>
+                <input type="number" class="stock" id="chickenstock" value="10" min="0" readonly>
+            </div>
+            <div class="Quantity">
+                <button class="remove" onclick="handleDecrease('chicken', 'chickenstock')">-</button>
+                <input type="number" id="chicken" value="1" min="1" readonly>
+                <button class="add" onclick="handleIncrease('chicken', 'chickenstock')">+</button>
+            </div>
+            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        </div>
+        <div class="p8">
+            <image src="img8.webp" width="100%"></image>
+            <div class="item">
+                <h2 class="food">Grilled Pork</h2>
+                <h2 class="price6">70$</h2>
+            </div>
+            <div class="Availability">
+                <h3>Stock Quantity:</h3>
+                <input type="number" class="stock" id="porkstock" value="10" min="0" readonly>
+            </div>
+            <div class="Quantity">
+                <button class="remove" onclick="handleDecrease('pork', 'porkstock')">-</button>
+                <input type="number" id="pork" value="1" min="1" readonly>
+                <button class="add" onclick="handleIncrease('pork', 'porkstock')">+</button>
+            </div>
+            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        </div>
+        <div class="p9">
+            <image src="img10.webp" width="100%" height="80%"></image>
+            <div class="item">
+                <h2 class="food">Macarons</h2>
+                <h2 class="price4">25$</h2>
+            </div>
+            <div class="Availability">
+                <h3>Stock Quantity:</h3>
+                <input type="number" class="stock" id="macronsstock" value="10" min="0" readonly>
+            </div>
+            <div class="Quantity">
+                <button class="remove" onclick="handleDecrease('macrons', 'macronsstock')">-</button>
+                <input type="number" id="macrons" value="1" min="1" readonly>
+                <button class="add" onclick="handleIncrease('macrons', 'macronsstock')">+</button>
+            </div>
+            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        </div>
+    </div></div>
+        <br><br><br><hr>
+        <div id="payment">
+            <h1>Payment Method</h1><br>
+            <form class="form">
+                <table>
+                    <tr>
+                        <td><input type="radio" name="mode">Credit or Debit Card</td>
+                    </tr>
+                    <tr>
+                        <td>Name on card:
+                            <input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>card number:
+                                <input>
+                            </td>
+                </tr>
+                <tr>
+                    <td>Expire Date: <input type="date"></td>
+                    <td>CVC/CVV : <input></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Save this card
+                </tr>
+                <tr>
+                    <td><button>Use This Card</button></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="mode">PayPal</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="mode">Google Pay</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="mode">Apple Pay</td>
+                </tr>
+             </table>
+        </form>
+        <button class="close">Cancel</button>
+    </div><br><hr>
+    <div id="Signup">
+        <h1>Sign Up</h1>
+        <form class="form2">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Name" size="30%"></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Email" size="30%"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" size="30%"></td>
+                </tr>
+            </table>
+        </form><br>
+        <button class="signin">Sign Up</button><br>
+        <input type="checkbox">Remember me
+        <br><br><p>Access me</p>
+        <a href="https://www.google.com/">Google |</a>
+        <a href="https://in.linkedin.com/">Linkedin |</a>
+        <a href="https://www.facebook.com/business/help/479266960559326">Facebook</a><br><br><br>
+        <p>Already have an account?</p>
+        <a href="#">Sign in</a>
+    </div><br><br><hr>
+    <div class="About">
+        <h1>About Us</h1>
+        <p>Vending machine is a 24x7 standalone unit which requires a standard power supply connection to function. It consist of simple electro-mechanical systems which helps to automate the entire vending process. In a nutshell, its basic function is to flawlessly issue users with a diverse range of products anytime.</p>
+    </div>
+    <div class="footer">
+        <h3>Contact</h3>
+        <h3>+91 3478631928</h3>
+        <h3>vendingmachine@gmail.com</h3>
+        <p style="margin-top: 50px;">The primary responsibility of the Vending Technician is to provide the highest quality of service to students and staff at all times. Other responsibilities include refilling vending machines, cleaning machines (inside and outside) and collecting money.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

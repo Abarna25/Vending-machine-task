@@ -1,0 +1,280 @@
+.header{
+    display: flex;
+}
+h1{
+    margin-top: 24px;
+}
+.header a{
+    padding: 20px;  
+    font-family: poppins;
+    font-size: 20px;
+    color: black;
+}
+.header nav{
+    margin-top: 25px;
+    margin-left: 45%;
+}
+.header a:hover{
+    background-color:rgb(201, 196, 196);
+    border-radius: 30px;
+}
+#container{
+    display: flex;
+}
+.content{
+    padding: 20px;
+    background-color: rgb(222, 162, 52);
+    color: black;
+}
+.Searchbar{
+    background-color: rgb(235, 214, 175);
+    border-radius: 10px;
+    padding: 8px;
+    width: 50%;
+}
+.visit{
+    background-color: rgb(222, 187, 122);
+    color: black;
+    padding: 8px;
+    border-radius: 15px;
+}
+.type{
+   padding: 15px;
+   margin-right: 70px;
+   background-color: rgb(222, 162, 52);
+   color: black;
+   border-radius: 20px;
+   margin-top: 5px;
+}
+.Categories{
+    background-color: rgb(145, 138, 138);
+    padding: 20px;
+}
+.Categories h1{
+    color: black;
+}
+.item{
+    display: flex;
+    padding-left: 10px;
+}
+.price{
+    margin-left: 120px;
+}
+.price1{
+    margin-left: 280px;
+}
+.price2{
+    margin-left: 30px;
+}
+.price3{
+    margin-left: 50px;
+}
+.price4{
+    margin-left: 30px;
+}
+.price5{
+    margin-left: 8px;
+}
+.price6{
+    margin-left: 75px;
+}
+.p1{
+    background-color: rgb(215, 207, 207);
+    width: 22%;
+    height: 80%;
+    margin-left: 10px;
+}
+.p2{
+    background-color: rgb(215, 207, 207);
+    width: 33%;
+    height: 320%;
+}
+.p3{
+    background-color: rgb(215, 207, 207);
+    width: 22%;
+    height: 100%;
+}
+.p4{
+    background-color: rgb(215, 207, 207);
+    width: 18%;
+    height: 50%;
+}
+.p5{
+    background-color: rgb(215, 207, 207);
+    width: 24%;
+    height: 100%;
+    margin-left: 7px;
+}
+.p6{
+    background-color: rgb(215, 207, 207);
+    width: 16%;
+    height: 200%;
+}
+.p7{
+    background-color: rgb(215, 207, 207);
+    width: 15%;
+    height: 200%;
+}
+.p8{
+    background-color: rgb(215, 207, 207);
+    width: 24%;
+    height: 100%;
+}
+.p9{
+    background-color: rgb(215, 207, 207);
+    width: 20%;
+    height: 200%;
+}
+.Quantity{
+    display: flex; 
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.Availability{
+    display: flex;
+    padding-left: 10px;
+}
+.remove{
+   margin-left: 15px;
+   width: 15%;
+   margin-right: 10px;
+}
+.remove1{
+    margin-left: 60px;
+    width: 12%;
+    margin-right: 8px;
+ }
+ .remove2{
+    margin-left: 10px;
+    width: 22%;
+    margin-right: 8px;
+ }
+.add{
+    margin-left: 10px;
+    width: 15%;
+}
+.add1{
+    margin-left: 8px;
+    width: 12%;
+}
+.add2{
+    margin-left: 8px;
+    width: 22%;
+}
+.stock{
+    width:16%;
+    margin-left: 5%;
+    height: 5%;
+    margin-top: 18px;
+}
+#burger{
+    width:10%;
+}
+#pizza{
+    width:10%;
+}
+#pancake{
+    width:10%;
+}
+#ice{
+    width:12%; 
+}
+#choco{
+    width:12%; 
+}
+#milkshake{
+    width:15%;
+}
+#chicken{
+    width:15%;
+}
+#pork{
+    width:10%;
+}
+#macrons{
+    width:12%;
+}
+.Cart{
+    margin-left: 8px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 18px;
+}
+.buy{
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.buy1{
+    background-color: black;
+    color: white;
+    margin-top: 6%;
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.buy2{
+    padding-left: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 22%;
+}
+.products1{
+    display: flex;
+    gap: 12px;
+}
+.products2{
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+/**.overlay{
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+}**/
+#payment{
+    text-align: center;
+    padding: 20px;
+}
+.form{
+    margin-left: 30%;
+    text-align: left;
+}
+.form2{
+    margin-left: 40%;
+}
+.close{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+.signin{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 12px;
+}
+#Signup{
+    text-align: center;
+}
+.About{
+    text-align: center;
+    padding: 20px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 35px;
+}
