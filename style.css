@@ -211,6 +211,18 @@ h1{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.cart-btn{
+    margin-top: 50px;
+    margin-left: 40%;
+    padding: 10px;
+    background-color: rgb(63, 164, 62);
+    color: white;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .buy1{
     background-color: black;
     color: white;
@@ -236,12 +248,6 @@ h1{
     gap: 8px;
     margin-top: 20px;
 }
-/**.overlay{
-    background-color: black;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 1;
-}**/
 #payment{
     text-align: center;
     padding: 20px;

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="header">
-        <image src="logo.webp" width="80px"></image>
+        <image src="images/logo.webp" width="80px"></image>
         <h1>FoodCart</h1>
         <nav>
            <a href="#container">Home</a>
@@ -19,7 +19,7 @@
    </div>
 </div>
    <div id="container">
-    <image src="bg.jpg" width="70%" ></image>
+    <image src="images/bg.jpg" width="70%" ></image>
     <div class="content">
         <h1>Get Started with FoodCart Today!</h1>
         <p>We serve healthy food with delicious menu choices. The quality of the food is the main point in each of our dishes. The taste that we provide is a unique taste and always attracts the tongue of visitors.</p><br>
@@ -43,7 +43,7 @@
     <h1>Our Popular Menu</h1>
     <div class="products1">
     <div class="p1">
-        <image src="img1.webp" width="100%" height="60%"></image>
+        <image src="images/img1.webp" width="100%" height="60%"></image>
         <div class="item">
             <h2 class="food">Burger</h2>
             <h2 class="price">30$</h2>
@@ -57,10 +57,10 @@
             <input type="number" id="burger" value="1" min="1" readonly>
             <button class="add" onclick="handleIncrease('burger', 'burgerstock')">+</button>
         </div>
-        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        <button class="buy" id="buy" onclick="addtocart('Burger', 30, 'burger')">Add to Cart</button>
     </div>
     <div class="p2">
-        <image src="img2.avif" width="100%" height="120%"></image>
+        <image src="images/img2.avif" width="100%" height="120%"></image>
         <div class="item">
             <h2 class="food">Pizza</h2>
             <h2 class="price1">50$</h2>
@@ -74,10 +74,10 @@
             <input type="number" id="pizza" value="1" min="1" readonly>
             <button class="add1" onclick="handleIncrease('pizza', 'pizzastock')">+</button>
         </div>
-        <button class="buy1" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        <button class="buy1" id="buy" onclick="addtocart('Pizza', 50, 'pizza')">Add to Cart</button>
     </div>
     <div class="p3">
-        <image src="img4.webp" width="100%" height="60%"></image>
+        <image src="images/img4.webp" width="100%" height="60%"></image>
         <div class="item">
             <h2 class="food">Pancake</h2>
             <h2 class="price">45$</h2>
@@ -91,10 +91,10 @@
             <input type="number" id="pancake" value="1" min="1" readonly>
             <button class="add" onclick="handleIncrease('pancake', 'pancakestock')">+</button>
         </div>
-        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        <button class="buy" id="buy" onclick="addtocart('Pancake', 45, 'pancake')">Add to Cart</button>
     </div>
     <div class="p4">
-        <image src="img6.webp" width="100%"></image>
+        <image src="images/img6.webp" width="100%"></image>
         <div class="item">
             <h2 class="food">Ice-Cream</h2>
             <h2 class="price2">30$</h2>
@@ -108,12 +108,12 @@
             <input type="number" id="ice" value="1" min="1" readonly>
             <button class="add" onclick="handleIncrease('ice', 'icestock')">+</button>
         </div>
-        <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+        <button class="buy" id="buy" onclick="addtocart('Ice-Cream', 30, 'ice')">Add to Cart</button>
     </div>
     </div>
     <div class="products2">
         <div class="p5">
-            <image src="img7.webp" width="100%"></image>
+            <image src="images/img7.webp" width="100%"></image>
             <div class="item">
                 <h2 class="food">Hot-Chocolate</h2>
                 <h2 class="price3">30$</h2>
@@ -127,10 +127,10 @@
                 <input type="number" id="choco" value="1" min="1" readonly>
                 <button class="add" onclick="handleIncrease('choco', 'chocostock')">+</button>
             </div>
-            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+            <button class="buy" id="buy" onclick="addtocart('Hot-Chocolate', 30, 'choco')">Add to Cart</button>
         </div>
         <div class="p6">
-            <image src="img3.webp" width="100%" height="80%"></image>
+            <image src="images/img3.webp" width="100%" height="80%"></image>
             <div class="item">
                 <h2 class="food">Milkshake</h2>
                 <h2 class="price4">30$</h2>
@@ -144,10 +144,10 @@
                 <input type="number" id="milkshake" value="1" min="1" readonly>
                 <button class="add2" onclick="handleIncrease('milkshake', 'milkshakestock')">+</button>
             </div>
-            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+            <button class="buy" id="buy" onclick="addtocart('Milkshake', 30, 'milkshake')">Add to Cart</button>
         </div>
         <div class="p7">
-            <image src="img5.webp" width="100%"></image>
+            <image src="images/img5.webp" width="100%"></image>
             <div class="item">
                 <h2 class="food">Fried-Chicken</h2>
                 <h2 class="price5">50$</h2>
@@ -161,10 +161,10 @@
                 <input type="number" id="chicken" value="1" min="1" readonly>
                 <button class="add" onclick="handleIncrease('chicken', 'chickenstock')">+</button>
             </div>
-            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+            <button class="buy" id="buy" onclick="addtocart('Fried-Chicken', 50, 'chicken')">Add to Cart</button>
         </div>
         <div class="p8">
-            <image src="img8.webp" width="100%"></image>
+            <image src="images/img8.webp" width="100%"></image>
             <div class="item">
                 <h2 class="food">Grilled Pork</h2>
                 <h2 class="price6">70$</h2>
@@ -178,10 +178,10 @@
                 <input type="number" id="pork" value="1" min="1" readonly>
                 <button class="add" onclick="handleIncrease('pork', 'porkstock')">+</button>
             </div>
-            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+            <button class="buy" id="buy" onclick="addtocart('Grilled Pork', 70, 'pork')">Add to Cart</button>
         </div>
         <div class="p9">
-            <image src="img10.webp" width="100%" height="80%"></image>
+            <image src="images/img10.webp" width="100%" height="80%"></image>
             <div class="item">
                 <h2 class="food">Macarons</h2>
                 <h2 class="price4">25$</h2>
@@ -195,9 +195,10 @@
                 <input type="number" id="macrons" value="1" min="1" readonly>
                 <button class="add" onclick="handleIncrease('macrons', 'macronsstock')">+</button>
             </div>
-            <button class="buy" id="buy" onclick="buybutton('buy')">Buy Now</button>
+            <button class="buy" id="buy" onclick="addtocart('Macarons', 25, 'macrons')">Add to Cart</button>
         </div>
     </div></div>
+    <button class="cart-btn" onclick="openCartPage()">Cart Page</button>
         <br><br><br><hr>
         <div id="payment">
             <h1>Payment Method</h1><br>
